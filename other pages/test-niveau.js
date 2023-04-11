@@ -76,12 +76,12 @@ function action() {
         points++; 
     }
     
-    document.getElementById("puntos").innerText = " " + points;
+    document.getElementById("puntos").innerText = points;
     document.getElementById("puntos222").innerText = points;
     document.getElementById("img-fons").style.display = "block";
-    if (points >= 10) {
+    if (points >= 1) {
         document.getElementById("points1").style.display = "block";
-    } else if (points < 10) {
+    } else if (points < 1) {
         document.getElementById("points2").style.display = "block";
     }
 }
