@@ -1,0 +1,266 @@
+* {
+    border: 0;
+    margin: 0;
+    color: 0;
+}
+body {
+    background-image: url(https://online.stanford.edu/sites/default/files/inline-images/1600X900-How-does-blockchain-work.jpg);
+}
+.body-format {
+    margin: auto;
+    width: 75%;
+    border: none;
+    background-color: rgb(180, 185, 255);
+    box-shadow: 0px 5px 38px 4px rgba(23, 10, 10, 0.58);
+    overflow-y: scroll;
+    height: 100vh;
+}
+/* Header */
+.title-section h1 {
+    margin: 0;
+    width: 100%;
+    /* border: 1px solid black; */
+    padding-top: 30px;
+    transition: 1s;
+    text-align: center;
+    font-size: 108px;
+    background: linear-gradient(115deg, #1d92e0, #8f1fbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.title-section {
+    /* border: 10px solid #000; */
+    box-shadow: 0px 5px 38px 4px rgba(0,0,0,0.58);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    text-align: center;
+    animation: title-section-animation-over 1s forwards;
+}
+.title-section:hover {
+    animation: title-section-animation 1s forwards;
+}
+.title-section button {
+    margin: auto;
+    margin-top: 65px;
+    width: 20%;
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(26, 23, 23);
+    background-color: rgb(170, 166, 166);
+    border-radius: 10px;
+    height: 40px;
+    opacity: 0%;
+    transition: 1s;
+    background: linear-gradient(115deg, #1d92e0, #8f1fbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* border: 1px solid black; */
+}
+.title-section button:hover {
+    box-shadow: 0px 5px 38px 4px rgba(0,0,0,0.58);
+    transition: .5s ease-out;
+    cursor: pointer;
+}
+.title-section:hover h1 {
+    padding-top: 150px;
+    transition: 1s;
+}
+.title-section:hover button {
+    opacity: 100%;
+    transition: 1s;
+}
+/* End Header */
+
+/* Intro Section */
+section {
+    margin-top: 70px;
+    margin-bottom: 500px;
+}
+section h1 {
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    font-size: 48px;
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+}
+section p {
+    margin: auto;
+    width: 70%;
+    margin-top: 45px;
+    text-align: justify;
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 106, 152);
+    line-height: 25px;
+    margin-bottom: 100px;
+}
+section .intro span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* End Intro Section */
+
+/* Ressources Section */
+.ressources-section {
+    /* border: 1px solid black; */
+    margin: auto;
+    width: 70%;
+    margin-top: 60px;
+    height: fit-content;
+}
+.ressources-section-first {
+    /* margin: 10px; */
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 15px;
+}
+.ressources-section .element {
+    /* border: 1px solid green;    */
+    margin-top: 13px;
+    flex-basis: 50%; 
+    height: 250px;
+    transition: 1s ease-in-out;
+    background-color: white;
+    font-size: 24px;
+    color: black;
+    border-radius: 35px;
+    box-shadow: 0px 5px 38px 4px rgba(113, 99, 99, 0.58);
+}
+.ressources-section .element:hover {
+    box-shadow: none;
+    transition: .3s ease-out;
+    cursor: pointer;
+    flex-basis: 100%;
+    height: 400px;
+    transition: .5s ease-in-out;  
+}
+.ressources-section h1 {
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blue;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.ressources-section .ressources-section-first .element a {
+    width: fit-content;
+    height: fit-content;
+    font-size: 18px;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    background-color: #1d92e0;
+    box-shadow: 0px 5px 38px rgba(113, 113, 113, 0.58);
+    transition: .5s;
+    margin-bottom: -15px;
+    margin-left: 55px;
+    /* border: 1px solid black; */
+}
+.ressources-section .ressources-section-first .element a:hover {
+    box-shadow: none;
+    transition: .5s;
+}
+.ressources-section .ressources-section-first .element p {
+    color: black;
+    font-size: 10px;
+    line-height: 18px;
+    width: 80%;
+    margin-top: -1px;
+    font-size: 14px;
+}
+.ressources-section .ressources-section-first .element p span {
+    opacity: 0%;
+    transition: .1s;
+}
+.ressources-section .ressources-section-first .element:nth-child(1):hover p span {
+    opacity: 100%;
+    transition: .51s;
+}
+.ressources-section .ressources-section-first .element img {
+    height: auto;
+    max-height: 120px;
+    margin-top: 20px;
+    margin-left: 44px;
+    width: 70%;
+    border-radius: 30px;
+    box-shadow: 0px 5px 38px rgba(113, 113, 113, 0.58);
+    opacity: 100%;
+    transition: .5s;
+}
+.ressources-section .ressources-section-first .element:hover img {
+    opacity: 0%;
+    transition: .5s;
+    height: 0;
+    width: 0;
+}
+.ressources-section .ressources-section-first .element .videos-text {
+    margin-left: 25px;
+    color: black;
+    text-align: center;
+}
+.ressources-section .ressources-section-first .element.element:nth-child(2) img {
+    margin-top: -80px;
+}
+.ressources-section .ressources-section-first .element.element:nth-child(2):hover ~ img{
+    display: block;
+}
+.ressources-section .ressources-section-first .el-two:hover a {
+    display: block;
+}
+.ressources-section .ressources-section-first .el-two a {
+    display: none;
+}
+.ressources-section .ressources-section-second .element h1 {
+    padding-top: 25px;
+    color: green;
+}
+.element-three {
+    background-color: white;
+    height: 200px;
+    border-radius: 30px;
+}
+.element-three h1 {
+    padding-top: 25px;
+}
+.element-three p {
+    margin-top: -25px;
+    margin-bottom: -.1px;
+}
+.element-three a {
+    height: 20px;
+    background-color: #1d92e0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 5px 38px rgba(113, 113, 113, 0.58);
+    margin-left: 45%;
+    margin-top: -50px;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+}
+.element-three a:hover {
+    box-shadow: none;
+}
+/* End Ressources Section */
+
+
+/* Keyframes animations */
+@keyframes title-section-animation {
+    0% {
+        height: 250px;
+    }
+    100% {
+        height: 450px;
+    }
+}
+@keyframes title-section-animation-over {
+    0% {
+        height: 450px;
+    }
+    100% {
+        height: 250px;
+    }
+}
