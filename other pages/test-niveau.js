@@ -77,6 +77,7 @@ function action() {
     }
     
     document.getElementById("puntos").innerText = " " + points;
+    document.getElementById("puntos222").innerText = points;
     document.getElementById("img-fons").style.display = "block";
     if (points >= 10) {
         document.getElementById("points1").style.display = "block";
