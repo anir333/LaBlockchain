@@ -615,3 +615,12 @@ h1 {
     margin-left: 30px;
     margin-top: -50px;
 }
+.nav {
+    /* border: 1px solid black; */
+    height: fit-content;
+    display: flex;
+}
+.impact {
+    margin-left: 700px;
+    /* background-color: black; */
+}
