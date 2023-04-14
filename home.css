@@ -5,6 +5,8 @@
 }
 body {
     background-image: url(https://online.stanford.edu/sites/default/files/inline-images/1600X900-How-does-blockchain-work.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .body-format {
     margin: auto;
